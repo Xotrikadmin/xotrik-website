@@ -1,0 +1,234 @@
+{
+ 
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "solutions": "Soluciones",
+    "services": "Servicios",
+    "ai": "IA y Ciencia de Datos",
+    "automation": "Automatización",
+    "integration": "Integración",
+    "company": "Empresa",
+    "team": "Equipo",
+    "careers": "Carreras",
+    "cta": "Contáctanos"
+  }
+,
+
+  "language": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  
+
+  "hero": {
+    "title": {
+      "before": "Descubre soluciones tecnológicas en",
+      "brand": "XOTRIK"
+    },
+    "subtitle": "Construyendo tu experiencia digital",
+    "cta": {
+      "label": "Nuestros Servicios",
+      "ariaLabel": "Ir a servicios"
+    },
+     "contact": "Contáctanos"
+  },
+
+  "herocontact": {
+    "title": "Conecta con Xotrik y enciende el futuro",
+    "subtitle": "¿Tienes una idea o desafío? Hagámosla brillar — con innovación, precisión y poder.",
+    "scrollDown": "Desliza hacia abajo",
+    "backToTop": "Volver arriba"
+  },
+
+
+
+  "features": {
+    "title": "Nuestros Valores",
+    "innovation": "Innovación",
+    "innovationDesc": "Soluciones tecnológicas vanguardistas",
+    "excellence": "Excelencia",
+    "excellenceDesc": "Calidad y mejora continua en cada proyecto",
+    "talent": "Talento",
+    "talentDesc": "Equipo multidisciplinario comprometido con el éxito",
+    "heroTitle": "Tu próximo salto digital empieza aquí",
+  "heroTagline": "Explora el ADN Xotrik: Innovación, Excelencia, Talento"
+  },
+  "about": {
+    "title": "Sobre Xotrik",
+    "desc": "Somos una empresa comprometida con la evolución digital y la innovación tecnológica, impulsando la transformación que redefine industrias y revoluciona experiencias",
+    "visionTitle": "Visión",
+    "learnMore": "Conoce más sobre XOTRIK",
+    "vision": "Ser referentes en la evolución digital, innovando en soluciones que brinden a nuestros clientes una experiencia digital de alto impacto",
+    "missionTitle": "Misión",
+    "mission": "Crear experiencias tecnológicas combinando tecnología de punta, talento humano y una cultura basada en la excelencia y la mejora continua"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "address": "San Jose,Costa Rica",
+    "phone": "+506 8919 0811",
+    "email": "contact@xotrikcom"
+  },
+ "footer": {
+  "rights": "Todos los derechos reservados",
+  "quickLinks": "Enlaces rápidos",
+  "contact": "Contacto",
+  "contactUs": "Contáctanos",
+  "social": "Síguenos",
+  "privacy": "Política de privacidad",
+  "terms": "Términos de servicio"
+},
+
+  "branding": {
+    "title": "Branding",
+    "desc": "Página de identidad y recursos gráficos de Xotrik"
+  },
+  "notfound": {
+    "title": "Página no encontrada",
+    "desc": "Lo sentimos, la página que buscas no existe"
+  },
+  "services": {
+    "heading": "Estamos aquí para ayudarte a crecer",
+    "aiSolutions": {
+      "title": "Soluciones de IA",
+      "bullets": [
+        "Desarrollo de chatbots y asistentes virtuales",
+        "Análisis predictivo y de datos",
+        "Visión por computadora",
+        "Integración de IA en sistemas empresariales"
+      ]
+    },
+    "customDev": {
+      "title": "Desarrollo de software a medida",
+      "bullets": [
+        "Consultoría y estrategia tecnológica",
+        "Desarrollo de aplicaciones",
+        "Soluciones en la nube",
+        "Mantenimiento, soporte y outsourcing"
+      ]
+    },
+    "automation": {
+      "title": "Automatización de flujos y procesos",
+      "bullets": [
+        "Identificación y análisis de procesos candidatos",
+        "RPA (Automatización Robótica de Procesos)",
+        "Hiperautomatización con IA y Machine Learning",
+        "Generación automática de documentos y contratos"
+      ]
+    },
+    "dataScience": {
+      "title": "Ciencia de Datos",
+      "bullets": [
+        "Ciencia de datos",
+        "IA",
+        "ML",
+        "Reportes"
+      ]
+    }
+  },
+  "common": {
+    "seeMore": "Ver más",
+    "contactUs": "Contáctenos"
+  },
+  "faq": {
+  "title": "Preguntas Frecuentes",
+  "support": {
+    "q": "¿Ofrecen soporte técnico para software adquirido?",
+    "a": "Sí, brindamos soporte técnico para ayudarte con cualquier inconveniente relacionado con el software"
+  },
+  "returns": {
+    "q": "¿Puedo devolver o cambiar el software si cambio de opinión?",
+    "a": "Ofrecemos devoluciones o cambios dentro de un período específico, sujeto a nuestra política de reembolsos"
+  },
+  "secure": {
+    "q": "¿Mi información está segura al realizar compras en línea?",
+    "a": "Puedes estar tranquilo, utilizamos métodos de cifrado seguros para proteger tu información personal"
+  },
+  "install": {
+    "q": "¿Ofrecen servicios de instalación de software?",
+    "a": "Sí, brindamos servicios de instalación de software para garantizar un proceso de configuración sin inconvenientes"
+  }
+},
+"values": {
+  "title": "Nuestros",
+  "highlight": "Valores",
+   "tagline": "Construyendo tu experiencia digital Guiados por la excelencia, impulsados por la innovación",
+  "innovation": {
+    "title": "Innovación continua",
+    "desc": "Promovemos la búsqueda constante de nuevas y vanguardistas soluciones tecnológicas, manteniendo el liderazgo en la transformación digital"
+  },
+  "excellence": {
+    "title": "Excelencia y mejora continua",
+    "desc": "Buscamos calidad desde el inicio hasta la entrega, perfeccionando procesos para ofrecer siempre una experiencia de alto impacto"
+  },
+  "customer": {
+    "title": "Enfoque en el cliente",
+    "desc": "Todas nuestras acciones están orientadas a la satisfacción y crecimiento del cliente, ofreciendo experiencias significativas y valiosas"
+  },
+  "talent": {
+    "title": "Talento y colaboración",
+    "desc": "Fomentamos un entorno colaborativo donde el compromiso, la empatía y el desarrollo personal son clave para la construcción de equipos"
+  },
+  "integrity": {
+    "title": "Integridad y transparencia",
+    "desc": "Actuamos con honestidad y responsabilidad, generando lazos de confianza con clientes y colaboradores"
+  },
+  "adaptability": {
+    "title": "Adaptabilidad y agilidad",
+    "desc": "Asumimos el cambio como una oportunidad, respondiendo rápida y eficazmente a nuevas tendencias tecnológicas y demandas del mercado"
+  }
+},
+"historySection": {
+  "tagline": "De la colaboración a la creación de valor",
+  "title": "Nuestra Historia",
+  "steps": [
+    "Lo que comenzó como una colaboración profesional se transformó en una visión común: construir una empresa que no solo brinde soluciones tecnológicas, sino que cree valor tangible para quienes confían en nosotros Creemos que las mejores soluciones nacen cuando mentes brillantes se unen con un propósito común",
+    "Somos cuatro desarrolladores que, al trabajar estrechamente juntos, descubrimos que nuestra combinación de habilidades técnicas y enfoque en la experiencia del usuario era mucho más poderosa aplicada en equipo, a lo largo de varios años y proyectos complejos",
+    "Relacionados con el análisis, desarrollo e implementación de soluciones, descubrimos que Xotrik no es solo una empresa; es la materialización de años de aprendizaje conjunto y la convicción de que la tecnología debe ser una herramienta que facilite la vida de las personas y potencie el crecimiento de las empresas",
+    "En Xotrik creemos que el verdadero éxito está en escuchar a nuestros clientes, entender sus necesidades y traducirlas en soluciones tecnológicas que marquen la diferencia Por eso, cada proyecto es un nuevo reto que afrontamos con entusiasmo y dedicación, porque sabemos que detrás de cada uno hay una oportunidad de generar un impacto real y duradero"
+  ]
+}
+,
+"successCasesTitle": "Casos de Éxito",
+"successCases": [
+  {
+    "icon": "chart",
+    "title": "Reportes Financieros Inteligentes",
+    "desc": "Problema: Lentas conciliaciones y errores manuales.\nSolución: Automatización y dashboards en tiempo real.\nResultado: Toma de decisiones en minutos, +90% eficiencia.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "icon": "cloud",
+    "title": "Migración Cloud Eficiente",
+    "desc": "Problema: Infraestructura costosa y poco flexible.\nSolución: Cloud híbrido y microservicios escalables.\nResultado: 99.99% uptime, -30% gastos TI.",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "icon": "robot",
+    "title": "Soporte Automatizado con IA",
+    "desc": "Problema: Saturación de consultas repetitivas.\nSolución: Chatbot IA, autoservicio multicanal.\nResultado: +70% casos resueltos automáticamente.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "icon": "mobile",
+    "title": "App Mobile para Supervisión Industrial",
+    "desc": "Problema: Supervisión manual y falta de alertas.\nSolución: App móvil con notificaciones en tiempo real.\nResultado: Respuesta 60% más rápida ante incidencias.",
+    "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "icon": "sync",
+    "title": "Integración de Sistemas Legacy",
+    "desc": "Problema: Sistemas antiguos sin comunicación.\nSolución: Integración vía APIs y RPA.\nResultado: +50% productividad y menos errores.",
+    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "icon": "db",
+    "title": "Optimización de Bases de Datos",
+    "desc": "Problema: Lento acceso y caídas frecuentes.\nSolución: Refactorización, tunning y alta disponibilidad.\nResultado: 5x más velocidad, 0% downtime.",
+    "image": "https://images.unsplash.com/photo-1517511620798-cec17d428bc0?auto=format&fit=crop&w=400&q=80"
+  }
+]
+
+}

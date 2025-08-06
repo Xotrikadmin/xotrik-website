@@ -1,0 +1,19 @@
+
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="gradientX" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#178582" />
+          <stop offset="100%" stop-color="#D4AF37" />
+        </linearGradient>
+      </defs>
+      <g fill="url(#gradientX)">
+        <path d="M20,10 L30,10 L50,40 L70,10 L80,10 L60,50 L80,90 L70,90 L50,60 L30,90 L20,90 L40,50 Z" />
+      </g>
+    </svg>
+  
+
