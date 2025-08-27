@@ -1,23 +1,29 @@
-import forms from '@tailwindcss/forms'
-import typography from '@tailwindcss/typography'
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
-        primary: '#4F46E5',
-        secondary: '#6366F1',
-        accent: '#A855F7',
+        primary: '#0A1828',
+        secondary: '#114F55',
+        accent: '#178582',
+        gold: '#D4AF37',
       },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+       backdropBlur: {
+        'xl': '40px',
       },
+      animation: {
+    'pulse-slow': 'pulse 6s ease-in-out infinite',
+  },
+     fontFamily: {
+  sans: ['Inter', 'sans-serif'],
+  heading: ['Plus Jakarta Sans', 'sans-serif'],
+},
     },
   },
-  plugins: [forms, typography],
+  plugins: [],
 }

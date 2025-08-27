@@ -1,0 +1,637 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "solutions": "Soluciones",
+    "services": "Servicios",
+    "ai": "IA y Ciencia de Datos",
+    "automation": "Automatización",
+    "integration": "Integración",
+    "company": "Empresa",
+    "team": "Equipo",
+    "careers": "Carreras",
+    "cta": "Contáctanos"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "hero": {
+    "title": {
+      "before": "Descubre soluciones tecnológicas en",
+      "brand": "XOTRIK"
+    },
+    "subtitle": "Construyendo tu experiencia digital",
+    "cta": {
+      "label": "Nuestros Servicios",
+      "ariaLabel": "Ir a servicios"
+    },
+    "contact": "Contáctanos"
+  },
+  "herocontact": {
+    "title": "Conecta con Xotrik y enciende el futuro",
+    "subtitle": "¿Tienes una idea o desafío? Hagámosla brillar — con innovación, precisión y poder.",
+    "scrollDown": "Desliza hacia abajo",
+    "backToTop": "Volver arriba"
+  },
+  "features": {
+    "title": "Nuestros Valores",
+    "innovation": "Innovación",
+    "innovationDesc": "Soluciones tecnológicas vanguardistas",
+    "excellence": "Excelencia",
+    "excellenceDesc": "Calidad y mejora continua en cada proyecto",
+    "talent": "Talento",
+    "talentDesc": "Equipo multidisciplinario comprometido con el éxito",
+    "heroTitle": "Tu próximo salto digital empieza aquí",
+    "heroTagline": "Explora el ADN Xotrik: Innovación, Excelencia, Talento"
+  },
+  "about": {
+    "title": "Sobre Xotrik",
+    "desc": "Somos una empresa comprometida con la evolución digital y la innovación tecnológica, impulsando la transformación que redefine industrias y revoluciona experiencias",
+    "visionTitle": "Visión",
+    "learnMore": "Conoce más sobre XOTRIK",
+    "vision": "Ser referentes en la evolución digital, innovando en soluciones que brinden a nuestros clientes una experiencia digital de alto impacto",
+    "missionTitle": "Misión",
+    "mission": "Crear experiencias tecnológicas combinando tecnología de punta, talento humano y una cultura basada en la excelencia y la mejora continua"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "address": "San Jose,Costa Rica",
+    "phone": "+506 8919 0811",
+    "email": "contact@xotrikcom"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "quickLinks": "Enlaces rápidos",
+    "contact": "Contacto",
+    "contactUs": "Contáctanos",
+    "social": "Síguenos",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio"
+  },
+  "branding": {
+    "title": "Branding",
+    "desc": "Página de identidad y recursos gráficos de Xotrik"
+  },
+  "notfound": {
+    "title": "Página no encontrada",
+    "desc": "Lo sentimos, la página que buscas no existe"
+  },
+  "services": {
+    "heading": "Estamos aquí para ayudarte a crecer",
+    "subtitle": "Impulsa tu transformación digital con software a medida e IA.",
+    "aiSolutions": {
+      "title": "Soluciones de IA",
+      "bullets": [
+        "Desarrollo de chatbots y asistentes virtuales",
+        "Análisis predictivo y de datos",
+        "Visión por computadora",
+        "Integración de IA en sistemas empresariales"
+      ],
+      "tooltip": "IA aplicada: chatbots, visión por computadora, analítica y más."
+    },
+    "customDev": {
+      "title": "Desarrollo de software a medida",
+      "bullets": [
+        "Consultoría y estrategia tecnológica",
+        "Desarrollo de aplicaciones",
+        "Soluciones en la nube",
+        "Mantenimiento, soporte y outsourcing"
+      ],
+      "tooltip": "Arquitectura escalable, frontends modernos y entrega continua."
+    },
+    "automation": {
+      "title": "Automatización de flujos y procesos",
+      "bullets": [
+        "Identificación y análisis de procesos candidatos",
+        "RPA (Automatización Robótica de Procesos)",
+        "Hiperautomatización con IA y Machine Learning",
+        "Generación automática de documentos y contratos"
+      ],
+      "tooltip": "RPA + IA para orquestar procesos de punta a punta."
+    },
+    "dataScience": {
+      "title": "Ciencia de Datos",
+      "bullets": [
+        "Ciencia de datos",
+        "IA",
+        "ML",
+        "Reportes"
+      ],
+      "tooltip": "Analítica avanzada, machine learning y gobierno de datos."
+    }
+  },
+  "common": {
+    "seeMore": "Ver más",
+    "contactUs": "Contáctenos"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "support": {
+      "q": "¿Ofrecen soporte técnico para software adquirido?",
+      "a": "Sí, brindamos soporte técnico para ayudarte con cualquier inconveniente relacionado con el software"
+    },
+    "returns": {
+      "q": "¿Puedo devolver o cambiar el software si cambio de opinión?",
+      "a": "Ofrecemos devoluciones o cambios dentro de un período específico, sujeto a nuestra política de reembolsos"
+    },
+    "secure": {
+      "q": "¿Mi información está segura al realizar compras en línea?",
+      "a": "Puedes estar tranquilo, utilizamos métodos de cifrado seguros para proteger tu información personal"
+    },
+    "install": {
+      "q": "¿Ofrecen servicios de instalación de software?",
+      "a": "Sí, brindamos servicios de instalación de software para garantizar un proceso de configuración sin inconvenientes"
+    }
+  },
+  "values": {
+    "title": "Nuestros",
+    "highlight": "Valores",
+    "tagline": "Construyendo tu experiencia digital Guiados por la excelencia, impulsados por la innovación",
+    "innovation": {
+      "title": "Innovación continua",
+      "desc": "Promovemos la búsqueda constante de nuevas y vanguardistas soluciones tecnológicas, manteniendo el liderazgo en la transformación digital"
+    },
+    "excellence": {
+      "title": "Excelencia y mejora continua",
+      "desc": "Buscamos calidad desde el inicio hasta la entrega, perfeccionando procesos para ofrecer siempre una experiencia de alto impacto"
+    },
+    "customer": {
+      "title": "Enfoque en el cliente",
+      "desc": "Todas nuestras acciones están orientadas a la satisfacción y crecimiento del cliente, ofreciendo experiencias significativas y valiosas"
+    },
+    "talent": {
+      "title": "Talento y colaboración",
+      "desc": "Fomentamos un entorno colaborativo donde el compromiso, la empatía y el desarrollo personal son clave para la construcción de equipos"
+    },
+    "integrity": {
+      "title": "Integridad y transparencia",
+      "desc": "Actuamos con honestidad y responsabilidad, generando lazos de confianza con clientes y colaboradores"
+    },
+    "adaptability": {
+      "title": "Adaptabilidad y agilidad",
+      "desc": "Asumimos el cambio como una oportunidad, respondiendo rápida y eficazmente a nuevas tendencias tecnológicas y demandas del mercado"
+    }
+  },
+  "historySection": {
+    "tagline": "De la colaboración a la creación de valor",
+    "title": "Nuestra Historia",
+    "steps": [
+      "Lo que comenzó como una colaboración profesional se transformó en una visión común: construir una empresa que no solo brinde soluciones tecnológicas, sino que cree valor tangible para quienes confían en nosotros Creemos que las mejores soluciones nacen cuando mentes brillantes se unen con un propósito común",
+      "Somos cuatro desarrolladores que, al trabajar estrechamente juntos, descubrimos que nuestra combinación de habilidades técnicas y enfoque en la experiencia del usuario era mucho más poderosa aplicada en equipo, a lo largo de varios años y proyectos complejos",
+      "Relacionados con el análisis, desarrollo e implementación de soluciones, descubrimos que Xotrik no es solo una empresa; es la materialización de años de aprendizaje conjunto y la convicción de que la tecnología debe ser una herramienta que facilite la vida de las personas y potencie el crecimiento de las empresas",
+      "En Xotrik creemos que el verdadero éxito está en escuchar a nuestros clientes, entender sus necesidades y traducirlas en soluciones tecnológicas que marquen la diferencia Por eso, cada proyecto es un nuevo reto que afrontamos con entusiasmo y dedicación, porque sabemos que detrás de cada uno hay una oportunidad de generar un impacto real y duradero"
+    ]
+  },
+  "successCasesTitle": "Casos de Éxito",
+  "successCases": [
+    {
+      "icon": "chart",
+      "title": "Reportes Financieros Inteligentes",
+      "desc": "Problema: Lentas conciliaciones y errores manuales.\nSolución: Automatización y dashboards en tiempo real.\nResultado: Toma de decisiones en minutos, +90% eficiencia.",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "icon": "cloud",
+      "title": "Migración Cloud Eficiente",
+      "desc": "Problema: Infraestructura costosa y poco flexible.\nSolución: Cloud híbrido y microservicios escalables.\nResultado: 99.99% uptime, -30% gastos TI.",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "icon": "robot",
+      "title": "Soporte Automatizado con IA",
+      "desc": "Problema: Saturación de consultas repetitivas.\nSolución: Chatbot IA, autoservicio multicanal.\nResultado: +70% casos resueltos automáticamente.",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "icon": "mobile",
+      "title": "App Mobile para Supervisión Industrial",
+      "desc": "Problema: Supervisión manual y falta de alertas.\nSolución: App móvil con notificaciones en tiempo real.\nResultado: Respuesta 60% más rápida ante incidencias.",
+      "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "icon": "sync",
+      "title": "Integración de Sistemas Legacy",
+      "desc": "Problema: Sistemas antiguos sin comunicación.\nSolución: Integración vía APIs y RPA.\nResultado: +50% productividad y menos errores.",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "icon": "db",
+      "title": "Optimización de Bases de Datos",
+      "desc": "Problema: Lento acceso y caídas frecuentes.\nSolución: Refactorización, tunning y alta disponibilidad.\nResultado: 5x más velocidad, 0% downtime.",
+      "image": "https://images.unsplash.com/photo-1517511620798-cec17d428bc0?auto=format&fit=crop&w=400&q=80"
+    }
+  ],
+  "servicesPage": {
+    "heroServices": {
+      "eyebrow": "XOTRIK — SERVICIOS",
+      "title": "Soluciones de Software e IA",
+      "titleAccent": "de otro nivel",
+      "subtitle": "Integramos IA, automatización y desarrollo a la medida para acelerar tu negocio con resultados medibles.",
+      "ctaPrimary": "Ver IA",
+      "ctaSecondary": "Desarrollo a la medida"
+    },
+    "aiSection": {
+      "eyebrow": "Inteligencia Artificial",
+      "title": "AI Solutions",
+      "subtitle": "Desde asistentes virtuales hasta visión por computadora e integración con sistemas empresariales.",
+      "items": {
+        "chatbots": {
+          "title": "Chatbots y Asistentes Virtuales",
+          "desc": "Atención automatizada con NLP para responder, gestionar reservas o soporte 24/7.",
+          "b1": "Soporte multicanal (web, WhatsApp, apps)",
+          "b2": "Entrenados con tu data y FAQs",
+          "b3": "Métricas de calidad de respuesta"
+        },
+        "predictive": {
+          "title": "Análisis Predictivo y de Datos",
+          "desc": "Modelos para detectar patrones y tendencias y apoyar decisiones estratégicas.",
+          "b1": "Dashboards ejecutivos",
+          "b2": "Series de tiempo / clasificación",
+          "b3": "Alertas tempranas"
+        },
+        "vision": {
+          "title": "Visión por Computadora",
+          "desc": "Reconocimiento facial, detección de objetos y análisis de imágenes.",
+          "b1": "Casos de seguridad y retail",
+          "b2": "Despliegue Edge/Cloud",
+          "b3": "Cumplimiento y privacidad"
+        },
+        "integration": {
+          "title": "Integración de IA",
+          "desc": "Lleva IA a tu CRM/ERP para eficiencia y personalización.",
+          "b1": "Conectores y APIs",
+          "b2": "Pipelines MLOps y monitoreo",
+          "b3": "A/B testing y mejora continua"
+        },
+        "cx": {
+          "title": "Experiencia de Cliente con IA",
+          "desc": "Enrutamiento inteligente, análisis de sentimiento y recomendadores.",
+          "b1": "Menores tiempos de atención",
+          "b2": "Autoservicio efectivo",
+          "b3": "CSAT/NPS mejorado"
+        },
+        "strategy": {
+          "title": "Estrategia y Gobierno de IA",
+          "desc": "Hoja de ruta, riesgos, ética y compliance.",
+          "b1": "Evaluación de madurez",
+          "b2": "Roadmap de casos de uso",
+          "b3": "Políticas y controles"
+        }
+      }
+    },
+    "softwareSection": {
+      "eyebrow": "Desarrollo a la Medida",
+      "title": "Custom Software Development",
+      "subtitle": "Del discovery a producción con arquitectura escalable y calidad de clase mundial.",
+      "items": {
+        "consulting": {
+          "title": "Consultoría y Estrategia",
+          "desc": "Análisis de negocio y definición de soluciones alineadas a objetivos.",
+          "b1": "Discovery y workshops",
+          "b2": "Arquitectura y backlog"
+        },
+        "web": {
+          "title": "Aplicaciones Web",
+          "desc": "Portales, paneles, sistemas internos y sitios transaccionales.",
+          "b1": "Frontends modernos",
+          "b2": "Seguridad y observabilidad"
+        },
+        "integration": {
+          "title": "Integración y APIs",
+          "desc": "Microservicios, APIs e integradores (ERP, e-commerce, CRM).",
+          "b1": "Sync/async, colas y eventos",
+          "b2": "Conectores listos",
+          "b3": "Testing de contratos"
+        },
+        "cloud": {
+          "title": "Soluciones Cloud",
+          "desc": "Cloud-native en AWS, Azure o GCP con alta escalabilidad.",
+          "b1": "IaC y CI/CD",
+          "b2": "Ajuste de costo y performance"
+        },
+        "support": {
+          "title": "Mantenimiento y Soporte",
+          "desc": "Correcciones, seguridad y mejoras continuas.",
+          "b1": "SLA y monitoreo",
+          "b2": "Roadmap evolutivo"
+        },
+        "modernization": {
+          "title": "Optimización y Modernización",
+          "desc": "Refactor, migración y escalamiento funcional.",
+          "b1": "Plan de tech debt",
+          "b2": "Hardening y performance"
+        }
+      }
+    },
+    "automationSection": {
+      "eyebrow": "Automatización",
+      "title": "Automatización de Flujos y Procesos",
+      "subtitle": "RPA, hiperautomatización con IA y gestión documental end-to-end.",
+      "items": {
+        "discovery": {
+          "title": "Identificación de Procesos",
+          "desc": "Detecta candidatos repetitivos, de alto volumen o sensibles al tiempo.",
+          "b1": "Process mining",
+          "b2": "Priorización por ROI"
+        },
+        "rpa": {
+          "title": "RPA (Robotic Process Automation)",
+          "desc": "Bots que simulan acciones del usuario sin APIs.",
+          "b1": "Carga de datos y conciliaciones",
+          "b2": "Sistemas legados y SAP"
+        },
+        "hyper": {
+          "title": "Hiperautomatización con IA/ML",
+          "desc": "Tareas cognitivas y orquestación compleja.",
+          "b1": "Motores de decisión",
+          "b2": "Predicción y scoring",
+          "b3": "Orquestación E2E"
+        },
+        "docs": {
+          "title": "Documentos y Contratos",
+          "desc": "Plantillas, firma electrónica y archivo centralizado.",
+          "b1": "Rutas de aprobación",
+          "b2": "Versionado y auditoría"
+        }
+      }
+    },
+    "dataSection": {
+      "eyebrow": "Data Science",
+      "title": "Ciencia de Datos, IA y ML",
+      "subtitle": "De analítica avanzada a modelos en producción.",
+      "items": {
+        "analytics": {
+          "title": "Analítica Avanzada",
+          "desc": "Clustering, KPIs, dashboards y segmentación.",
+          "b1": "Modelos descriptivos",
+          "b2": "Análisis de cohortes",
+          "b3": "Visualizaciones ejecutivas"
+        },
+        "ml": {
+          "title": "Machine Learning",
+          "desc": "Entrenamiento, despliegue y monitoreo de modelos.",
+          "b1": "MLOps y pipelines",
+          "b2": "Feature stores"
+        },
+        "governance": {
+          "title": "Gobierno y Calidad de Datos",
+          "desc": "Catálogo, linaje, calidad y seguridad.",
+          "b1": "Políticas y accesos",
+          "b2": "Data contracts"
+        }
+      }
+    },
+    "ctaBlock": {
+      "title": "¿Listo para llevar tu operación al siguiente nivel?",
+      "subtitle": "Hablemos de un roadmap de 90 días con quick wins y métricas claras.",
+      "button": "Agenda una reunión"
+    }
+  },
+  "tech": {
+  "heading": "Construimos con tecnologías de próxima generación",
+  "items": {
+    "react":       { "title": "React",        "desc": "Librería de UI para interfaces interactivas." },
+    "python":      { "title": "Python",       "desc": "Lenguaje versátil para aplicaciones modernas." },
+    "dotnet":      { "title": ".NET",         "desc": "Framework backend de nivel empresarial." },
+    "nodejs":      { "title": "Node.js",      "desc": "Runtime de JavaScript de alto rendimiento." },
+    "postgresql":  { "title": "PostgreSQL",   "desc": "Base de datos SQL avanzada y de código abierto." },
+    "docker":      { "title": "Docker",       "desc": "Contenerización y herramientas DevOps." },
+    "typescript":  { "title": "TypeScript",   "desc": "JavaScript tipado para apps escalables." },
+    "aiAutomation":{ "title": "Automatización con IA", "desc": "Automatización inteligente y GenAI para transformar procesos." }
+  }
+},
+
+
+  "why": {
+    "eyebrow": "Ventaja competitiva",
+    "title": "¿Por qué elegir Xotrik?",
+    "subtitle": "Talento senior, entrega confiable y mentalidad de partnership para generar resultados medibles.",
+    "metrics": [
+      { "value": "95%", "label": "Proyectos entregados a tiempo" },
+      { "value": "24/7", "label": "Soporte prioritario" },
+      { "value": "10+", "label": "Tecnologías dominadas" },
+      { "value": "4.9★", "label": "Satisfacción promedio de clientes" }
+    ],
+    "cards": [
+      {
+        "title": "Equipo Senior Certificado",
+        "desc": "Ingenieros con experiencia real en empresas y certificaciones, capaces de diseñar y desplegar software listo para producción."
+      },
+      {
+        "title": "Innovación Continua",
+        "desc": "Adoptamos tecnologías emergentes —IA, nube y DevOps— para que tus soluciones sean escalables y preparadas para el futuro."
+      },
+      {
+        "title": "Ejecución Precisa y Puntual",
+        "desc": "Alcance claro, demos semanales y control de riesgos para asegurar una entrega predecible en tiempo y presupuesto."
+      },
+      {
+        "title": "Soporte Dedicado",
+        "desc": "Desde el descubrimiento hasta el éxito post-lanzamiento, con monitoreo proactivo, SLAs y roadmap evolutivo."
+      }
+    ]
+  }
+
+,
+
+  "successCasesCarousel": {
+    "title": "Casos de Éxito",
+    "aria": {
+      "carouselLabel": "Carrusel de casos de éxito",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "slideLabelMessage": "{{index}} de {{slidesLength}}",
+      "casePrefix": "Caso de éxito"
+    },
+    "badgeFallback": { "text": "TECH", "color": "#FFD369" },
+    "badges": [
+      { "text": "FINANZAS", "color": "#D4AF37" },
+      { "text": "CLOUD", "color": "#178582" },
+      { "text": "IA", "color": "#114F55" },
+      { "text": "INDUSTRIA", "color": "#5be4b4" },
+      { "text": "INTEGRACIÓN", "color": "#e2c185" },
+      { "text": "DATOS", "color": "#3cc3f2" }
+    ],
+    "cases": [
+      {
+        "icon": "chart",
+        "title": "Optimización de Costos Financieros",
+        "desc": "Redujimos en un 23% los gastos operativos de una banca digital, automatizando procesos clave con IA y cloud analytics.",
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=128&q=80"
+      },
+      {
+        "icon": "cloud",
+        "title": "Migración Cloud Enterprise",
+        "desc": "Migración total a Azure en 4 semanas con 99.99% de uptime y compliance ISO 27001.",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=128&q=80"
+      },
+      {
+        "icon": "robot",
+        "title": "Automatización Inteligente con IA",
+        "desc": "Chatbots y RPA mejoraron la satisfacción al cliente y aceleraron la resolución de tickets en un 64%.",
+        "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=128&q=80"
+      },
+      {
+        "icon": "mobile",
+        "title": "App Mobile Multiplataforma",
+        "desc": "+120K descargas y rating de 4.9★ en 6 meses para una app de gestión logística.",
+        "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=128&q=80"
+      },
+      {
+        "icon": "sync",
+        "title": "Integración IoT & Automatización",
+        "desc": "Conectamos sensores industriales a la nube y automatizamos alertas; -32% incidentes críticos.",
+        "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=128&q=80"
+      },
+      {
+        "icon": "db",
+        "title": "Big Data para Decisiones Estratégicas",
+        "desc": "Dashboards de BI en tiempo real triplicaron la velocidad de decisiones en retail.",
+        "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=128&q=80"
+      }
+    ]
+  }
+
+,
+
+  "aboutPro": {
+    "titleTop": "Somos ingeniería",
+    "titleBottom": "que convierte visión en impacto",
+    "description": "Diseñamos, construimos y operamos soluciones de software y datos con foco en negocio, seguridad y performance. Desde migraciones cloud a automatización con IA, acompañamos a equipos que quieren resultados medibles.",
+    "pillSecure": "Seguridad & Compliance",
+    "pillFast": "Entrega Acelerada",
+    "pillCloud": "Nube & Escalabilidad",
+    "pillPartner": "Partner Estratégico",
+    "cta": "Conocer más",
+    "ctaAria": "Conocer más sobre Xotrik",
+    "secondaryNote": "Auditorías, workshops y sprints de descubrimiento",
+    "statYears": "años de experiencia",
+    "statProjects": "proyectos entregados",
+    "statUptime": "uptime misión crítica",
+    "imageAlt": "Equipo Xotrik trabajando en soluciones cloud e IA",
+    "badge": "ISO 27001 Ready",
+    "caption": "Transformamos operaciones, datos y experiencias en valor medible.",
+    "timelineTitle": "Nuestra evolución",
+    "timeline": [
+      { "year": "2017", "title": "Fundación", "desc": "Nacemos con foco en ingeniería de software y datos." },
+      { "year": "2019", "title": "Cloud-First", "desc": "Adoptamos cloud a escala y prácticas SRE." },
+      { "year": "2022", "title": "IA aplicada", "desc": "Integramos MLOps, RPA y copilots en operaciones." },
+      { "year": "2024", "title": "Ecosistema Enterprise", "desc": "Seguridad, compliance y escalabilidad en top empresas." }
+    ]
+    
+  },
+  
+  "assistant": {
+    "title": "Xotrik IA",
+    "open": "Abrir asistente Xotrik IA",
+    "close": "Cerrar asistente",
+    "greeting": "¡Hola! Soy Xotrik IA 🤖. Pregúntame sobre automatización, predicciones, chatbots o IA aplicada a tu negocio.",
+    "placeholder": "Pregunta a Xotrik IA...",
+    "send": "Enviar",
+    "thinking": "Pensando...",
+    "noResponse": "No hay respuesta de Xotrik IA.",
+    "errorMsg": "Ocurrió un error con el servicio de IA. Intenta de nuevo.",
+    "suggestions": [
+      { "label": "¿Cómo automatizar reportes con IA?", "prompt": "¿Cómo puedo automatizar reportes en mi empresa con IA?" },
+      { "label": "¿Puedes predecir ventas?", "prompt": "¿Puedes predecir las ventas del próximo mes con base en estos datos: ..." },
+      { "label": "Traduce este texto", "prompt": "Traduce: 'Optimiza tu negocio con Xotrik IA' al inglés." },
+      { "label": "Tendencias IA 2026", "prompt": "¿Qué tendencias de IA serán clave en 2026 para empresas?" }
+    ]
+  },
+
+  
+  "aboutPage": {
+    "hero": {
+      "title": "Sobre Nosotros",
+      "subtitle": "Combinamos ingeniería, datos y pensamiento de producto para convertir tu visión en impacto medible."
+    },
+    "intro": {
+      "title": "Xotrik",
+      "body": "En Xotrik creemos que el verdadero éxito está en escuchar a nuestros clientes, entender sus necesidades y traducirlas en soluciones tecnológicas que marquen la diferencia. Por eso, cada proyecto es un nuevo reto que abordamos con entusiasmo y dedicación, porque sabemos que detrás de cada uno hay una oportunidad de generar impacto real y duradero.",
+      "imageAlt": "Colaboración del equipo Xotrik"
+    },
+    "grow": {
+      "title": "Estamos aquí para ayudarte a crecer."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "body": "Crear experiencias tecnológicas que combinen tecnología de vanguardia, talento humano y una cultura basada en la excelencia y la mejora continua, enfocadas en la satisfacción y crecimiento de nuestros clientes."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "body": "Ser un referente en evolución digital, innovando soluciones que proporcionen a nuestros clientes una experiencia digital de alto impacto, impulsando su crecimiento y éxito sostenible."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "subtitle": "Construyendo tu experiencia digital",
+      "items": [
+        {
+          "title": "Innovación continua",
+          "desc": "Impulsamos la búsqueda constante de soluciones tecnológicas de vanguardia, manteniendo el liderazgo en transformación digital.",
+          "icon": "🚀"
+        },
+        {
+          "title": "Excelencia y mejora continua",
+          "desc": "Apuntamos a la calidad desde el inicio hasta la entrega, perfeccionando procesos para ofrecer siempre una experiencia de alto impacto.",
+          "icon": "⭐"
+        },
+        {
+          "title": "Enfoque en el cliente",
+          "desc": "Todas nuestras acciones se orientan a la satisfacción y crecimiento del cliente, ofreciendo experiencias significativas y valiosas.",
+          "icon": "🎯"
+        },
+        {
+          "title": "Talento y colaboración",
+          "desc": "Fomentamos un entorno colaborativo donde el compromiso, la empatía y el desarrollo personal son clave para la construcción de equipo.",
+          "icon": "🤝"
+        },
+        {
+          "title": "Integridad y transparencia",
+          "desc": "Actuamos con honestidad y responsabilidad, generando lazos de confianza con clientes y colaboradores.",
+          "icon": "💎"
+        },
+        {
+          "title": "Adaptabilidad y agilidad",
+          "desc": "Vemos el cambio como una oportunidad, respondiendo de forma rápida y efectiva a nuevas tendencias tecnológicas y demandas del mercado.",
+          "icon": "⚡"
+        }
+      ]
+    },
+    "banner": {
+      "title": "De la colaboración a la creación de valor"
+    },
+    "history": {
+      "title": "Nuestra Historia",
+      "paragraphs": [
+        "Lo que empezó como una colaboración profesional se transformó en una visión común: construir una empresa que no solo entregue soluciones tecnológicas, sino que cree valor tangible para quienes confían en nosotros. Creemos que las mejores soluciones nacen cuando mentes brillantes se unen con un propósito compartido.",
+        "Somos cuatro desarrolladores que, trabajando de cerca, descubrimos que nuestra combinación de habilidades técnicas y foco en la experiencia de usuario es mucho más poderosa cuando se aplica en equipo, a lo largo de los años, en proyectos complejos.",
+        "A través del análisis, desarrollo e implementación de soluciones, descubrimos que Xotrik no es solo una empresa: es la materialización de años de aprendizaje conjunto y la convicción de que la tecnología debe facilitar la vida de las personas y potenciar el crecimiento de las empresas.",
+        "En Xotrik creemos que el verdadero éxito está en escuchar a nuestros clientes, comprender sus necesidades y traducirlas en soluciones tecnológicas que marquen la diferencia. Cada proyecto es un nuevo desafío que abordamos con entusiasmo y dedicación."
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para escribir el próximo capítulo?",
+      "subtitle": "Convirtamos tu visión en impacto medible con tecnología segura y escalable.",
+      "button": "Comienza tu viaje"
+    },
+    "team": {
+  "title": "Conoce a nuestro equipo",
+  "subtitle": "Cuatro desarrolladores apasionados unidos por una visión compartida de excelencia tecnológica",
+  "imageAlt": "Nuestro equipo trabajando en conjunto"
+  }
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
