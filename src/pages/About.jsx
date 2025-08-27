@@ -1,158 +1,175 @@
-import React, { useCallback } from "react";
+
+import React, { useCallback, useMemo, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
+import { FaShieldAlt, FaBolt, FaCloud, FaHandsHelping } from "react-icons/fa";
 
-export default function About() {
+/* Contador animado (respeta reduce-motion) */
+function useCountUp(target = 0, ms = 1200, reduce = false) {
+  const [value, setValue] = useState(0);
+  const rafRef = useRef(null);
+  useEffect(() => {
+    if (reduce) { setValue(target); return; }
+    const start = performance.now();
+    const tick = (t) => {
+      const p = Math.min(1, (t - start) / ms);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setValue(Math.floor(eased * target));
+      if (p < 1) rafRef.current = requestAnimationFrame(tick);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+    return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); };
+  }, [target, ms, reduce]);
+  return value;
+}
+
+export default function AboutProPlus() {
   const { t } = useTranslation();
+  const reduceMotion = useReducedMotion();
 
-  // Animaciones
-  const sectionAnim = {
-    hidden: { opacity: 0, y: 54 },
-    show: { opacity: 1, y: 0, transition: { duration: 1.1, ease: "easeOut" } },
-  };
-  const cardAnim = {
-    hidden: { opacity: 0, y: 38, scale: 0.97 },
-    show: { opacity: 1, y: 0, scale: 1, transition: { duration: 1.09, ease: "easeOut" } },
-  };
+  // Animaciones base
+  const container = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } };
+  const stagger = { show: { transition: { staggerChildren: 0.12, delayChildren: 0.12 } } };
+  const item = { hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } };
+
+  // Partículas
+  const particlesInit = useCallback(async (engine) => { await loadSlim(engine); }, []);
+  const particlesOptions = useMemo(() => ({
+    fullScreen: { enable: false },
+    background: { color: "transparent" },
+    detectRetina: true,
+    particles: {
+      number: { value: reduceMotion ? 8 : 22, density: { enable: true, area: 900 } },
+      color: { value: ["#D4AF37", "#16d9e3", "#ffffff"] },
+      size: { value: { min: 1.1, max: 2.4 } },
+      move: { enable: !reduceMotion, speed: 0.12 },
+      opacity: { value: 0.15, random: { enable: true, minimumValue: 0.08 } },
+      links: { enable: !reduceMotion, distance: 140, color: "#D4AF37", opacity: 0.05, width: 1 },
+      shape: { type: "circle" },
+    }
+  }), [reduceMotion]);
+
+  // Contadores
+  const years = useCountUp(8, 1200, reduceMotion);
+  const projects = useCountUp(120, 1300, reduceMotion);
+  const uptime = useCountUp(99, 1100, reduceMotion);
+
+  const features = [
+    { icon: <FaShieldAlt />, text: t("aboutPro.pillSecure", "Seguridad & Compliance") },
+    { icon: <FaBolt />, text: t("aboutPro.pillFast", "Entrega Acelerada") },
+    { icon: <FaCloud />, text: t("aboutPro.pillCloud", "Nube & Escalabilidad") },
+    { icon: <FaHandsHelping />, text: t("aboutPro.pillPartner", "Partner Estratégico") },
+  ];
 
   return (
     <motion.section
       id="about"
-      variants={sectionAnim}
+      variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.36 }}
-      className="relative isolate overflow-hidden bg-[#0A1828] py-24 px-3 sm:px-8 flex flex-col items-center select-none"
+      viewport={{ once: true, amount: 0.35 }}
+      className="relative isolate overflow-hidden bg-[#0A1828] py-24 px-4 sm:px-8"
+      aria-labelledby="aboutpro-title"
     >
-      {/* Partículas doradas y cyan */}
-      <Particles
-        id="aboutParticles"
-        init={useCallback(async (engine) => await loadSlim(engine), [])}
-        options={{
-          fullScreen: { enable: false },
-          background: { color: "transparent" },
-          particles: {
-            number: { value: 28, density: { enable: true, area: 950 } },
-            color: { value: ["#D4AF37", "#16d9e3", "#fff"] },
-            size: { value: { min: 1.1, max: 2.8 } },
-            move: { enable: true, speed: 0.10 },
-            opacity: { value: 0.16, random: { enable: true, minimumValue: 0.09 } },
-            links: { enable: true, distance: 130, color: "#D4AF37", opacity: 0.035, width: 1 },
-            shape: { type: "circle" },
-          },
-        }}
-        className="absolute inset-0 -z-10"
-      />
+      {/* Partículas */}
+      <Particles id="aboutProParticles" init={particlesInit} options={particlesOptions} className="absolute inset-0 -z-10" />
 
-      {/* Glow lateral decorativo */}
-      <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-[390px] w-28 hidden lg:block">
-        <div className="h-full w-full bg-gradient-to-b from-[#D4AF37]/18 via-transparent to-[#178582]/28 rounded-full blur-[44px] opacity-80"></div>
+      {/* decor */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-0 opacity-[0.08]" style={{
+          backgroundImage: "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.2) 1px, transparent 1px)",
+          backgroundSize: "24px 24px"
+        }}/>
+        <div className="absolute -top-24 -right-24 w-[360px] h-[360px] rounded-full blur-[90px] opacity-30"
+             style={{ background: "radial-gradient(closest-side, #D4AF37 30%, transparent 70%)" }} />
+        <div className="absolute -bottom-28 -left-20 w-[320px] h-[320px] rounded-full blur-[90px] opacity-30"
+             style={{ background: "radial-gradient(closest-side, #178582 30%, transparent 70%)" }} />
       </div>
 
-      {/* Glow HALO detrás del card */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-2/3 z-0 w-[410px] h-[120px] pointer-events-none">
-        <div className="w-full h-full bg-gradient-to-r from-[#D4AF37]/18 via-transparent to-[#178582]/24 blur-3xl rounded-full opacity-70" />
-      </div>
+      <motion.div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center" variants={stagger}>
+        {/* Texto */}
+        <motion.div variants={item} className="relative">
+          {/* Línea dorada */}
+          <span className="hidden lg:block absolute -left-8 top-2 h-16 w-1 rounded-full" style={{ backgroundColor: "#D4AF37", boxShadow: "0 0 22px #D4AF3777" }} />
+          
+          {/* TÍTULO EN DORADO */}
+          <h2 id="aboutpro-title" className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight" style={{ color: "#D4AF37" }}>
+            {t("aboutPro.titleTop", "Somos ingeniería")}{" "}
+            <span className="block">{t("aboutPro.titleBottom", "que convierte visión en impacto")}</span>
+          </h2>
 
-      {/* Contenido principal: Imagen + Card */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-center w-full max-w-6xl gap-14 lg:gap-20">
-        {/* Imagen más grande y cuadrada */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.97, x: 40 }}
-          whileInView={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ duration: 0.85, ease: "easeOut", delay: 0.12 }}
-          viewport={{ once: true }}
-          className="
-            w-full max-w-2xl aspect-[4/3]
-            rounded-3xl shadow-2xl border-2 border-[#D4AF37]/30
-            overflow-hidden flex-shrink-0
-            min-h-[340px] lg:min-h-[380px]
-          "
-          style={{
-            boxShadow: "0 8px 50px 0 #D4AF3740, 0 2px 30px 0 #17858235"
-          }}
-        >
-          <img
-            src="/about.jpg"
-            alt="Xotrik team collaboration"
-            className="w-full h-full object-cover object-center"
-            loading="lazy"
-            draggable={false}
-          />
-        </motion.div>
-
-        {/* Card de texto */}
-        <motion.div
-          variants={cardAnim}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          whileHover={{
-            boxShadow: "0 6px 80px 0 #D4AF3738, 0 2px 48px 0 #16d9e366",
-            borderColor: "#D4AF37",
-            transition: { duration: 0.23 }
-          }}
-          className="
-            relative w-full max-w-xl
-            bg-gradient-to-br from-[#0A1828e8] via-[#114F55ea] to-[#178582e5]
-            rounded-3xl shadow-[0_4px_48px_0_#17858255,0_2px_40px_0_#D4AF3735]
-            border border-[#D4AF37]/40 border-t-4 border-t-[#fff7e0]/12
-            px-5 sm:px-8 py-10 mb-1 backdrop-blur-[58px]
-            flex flex-col items-center
-            ring-2 ring-[#fff7e0]/8
-            transition-all duration-500
-            z-10
-          "
-        >
-          <p className="text-center text-lg sm:text-xl font-medium text-white/90 leading-relaxed">
-            {t("about.desc")}
+          <p className="mt-5 text-white/90 text-base sm:text-lg leading-relaxed max-w-xl">
+            {t("aboutPro.description", "Diseñamos, construimos y operamos soluciones de software y datos con foco en negocio, seguridad y performance.")}
           </p>
-          <Link
-            to="/about"
-            className="
-              mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold
-              bg-gradient-to-br from-[#fffbe7e8] to-[#D4AF37f2]
-              text-[#114F55] shadow-xl ring-2 ring-[#D4AF37]/10
-              hover:scale-105 hover:shadow-[0_0_22px_4px_#D4AF3780]
-              hover:bg-gradient-to-br hover:from-[#D4AF37] hover:to-[#fff7e0]
-              transition-all duration-200 border border-[#fff7e0]/20
-              focus:outline-none focus:ring-4 focus:ring-[#178582]/30
-              backdrop-blur-[11px]
-            "
-          >
-            {t("about.learnMore")}
-            <motion.svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="#114F55"
-              initial={{ x: 0 }}
-              whileHover={{ x: 5 }}
-              transition={{ type: "spring", stiffness: 350, damping: 15 }}
-            >
-              <motion.path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.2}
-                d="M9 5l7 7-7 7"
-              />
-            </motion.svg>
-          </Link>
-        </motion.div>
-      </div>
 
-      {/* CSS extra para animaciones */}
+          {/* Pills */}
+          <motion.ul variants={stagger} className="mt-6 flex flex-wrap gap-3">
+            {features.map((f, i) => (
+              <motion.li key={i} variants={item} className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/90 backdrop-blur">
+                <span className="text-[#D4AF37]">{f.icon}</span>{f.text}
+              </motion.li>
+            ))}
+          </motion.ul>
+
+          {/* CTA */}
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <Link
+              to="/about"
+              aria-label={t("aboutPro.ctaAria", "Conocer más sobre Xotrik")}
+              className="inline-flex items-center gap-2 rounded-xl px-6 py-3 font-semibold bg-[#D4AF37] text-[#0A1828] shadow-[0_10px_28px_rgba(212,175,55,0.45)] transition-transform duration-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-[#D4AF37]/40 hover:-translate-y-0.5 active:translate-y-0"
+            >
+              {t("aboutPro.cta", "Conocer más")}
+              <motion.svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#0A1828"
+                initial={{ x: 0 }} whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 350, damping: 16 }} aria-hidden="true">
+                <motion.path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M9 5l7 7-7 7" />
+              </motion.svg>
+            </Link>
+            <span className="text-sm text-white/60">{t("aboutPro.secondaryNote", "Auditorías, workshops y sprints de descubrimiento")}</span>
+          </div>
+
+          {/* Stats */}
+          <motion.div variants={stagger} className="mt-10 grid grid-cols-3 gap-4 max-w-md">
+            <motion.div variants={item} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center backdrop-blur">
+              <div className="text-2xl font-extrabold text-white tabular-nums">{years}<span className="text-[#D4AF37]">+</span></div>
+              <div className="text-xs text-white/70">{t("aboutPro.statYears", "años de experiencia")}</div>
+            </motion.div>
+            <motion.div variants={item} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center backdrop-blur">
+              <div className="text-2xl font-extrabold text-white tabular-nums">{projects}<span className="text-[#D4AF37]">+</span></div>
+              <div className="text-xs text-white/70">{t("aboutPro.statProjects", "proyectos entregados")}</div>
+            </motion.div>
+            <motion.div variants={item} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center backdrop-blur">
+              <div className="text-2xl font-extrabold text-white tabular-nums">{uptime}<span className="text-[#D4AF37]">.%</span></div>
+              <div className="text-xs text-white/70">{t("aboutPro.statUptime", "uptime mision crítico")}</div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+
+        {/* Imagen + Tilt */}
+        <motion.div variants={item} className="relative">
+          <div className="pointer-events-none absolute -top-8 -left-6 h-40 w-40 rounded-full blur-[60px] opacity-50"
+               style={{ background: "radial-gradient(closest-side, #D4AF37 30%, transparent 70%)" }} />
+          <Tilt tiltMaxAngleX={7} tiltMaxAngleY={7} glareEnable glareMaxOpacity={0.12} glareColor="#D4AF37" scale={1.008} transitionSpeed={1000} className="w-full">
+            <div className="relative overflow-hidden rounded-3xl border border-[#D4AF37]/35 bg-[#0B1A2A]/60 backdrop-blur-xl shadow-[0_8px_50px_0_rgba(212,175,55,0.25),0_2px_30px_0_rgba(23,133,130,0.2)]">
+              <img src="/about.jpg" alt={t("aboutPro.imageAlt", "Equipo Xotrik trabajando en soluciones cloud e IA")} className="h-[340px] w-full object-cover sm:h-[420px]" loading="lazy" draggable={false} />
+              <div className="absolute left-4 top-4 rounded-full bg-[#D4AF37] px-3 py-1 text-xs font-bold text-[#0A1828] shadow-lg">{t("aboutPro.badge", "ISO 27001 Ready")}</div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1828cc] to-transparent p-4">
+                <p className="text-sm text-white/90">{t("aboutPro.caption", "Transformamos operaciones, datos y experiencias en valor medible.")}</p>
+              </div>
+            </div>
+          </Tilt>
+        </motion.div>
+      </motion.div>
+
+      {/* estilos locales */}
       <style jsx>{`
-        .animate-pulse-slow {
-          animation: pulseSlow 2.7s cubic-bezier(.4,0,.6,1) infinite;
-        }
-        @keyframes pulseSlow {
-          0%, 100% { opacity: 0.28; }
-          50% { opacity: 0.89; }
+        /* (dejado por si luego quieres reusar el marquee) */
+        @keyframes scrollLeft {
+          from { transform: rotateX(8deg) translateX(0); }
+          to { transform: rotateX(8deg) translateX(-50%); }
         }
       `}</style>
     </motion.section>

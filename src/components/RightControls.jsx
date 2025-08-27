@@ -10,9 +10,9 @@ import {
 import LanguageDropdown from "./LanguageDropdown";
 
 const SOCIALS = [
-  { href: "#", icon: FaInstagram },
-  { href: "#", icon: FaFacebookF },
-  { href: "#", icon: FaXTwitter },
+  { href: "https://www.instagram.com/xotrik_company?igsh=MWcyODU0bDVmYnZzcg==", icon: FaInstagram },
+  { href: "https://www.facebook.com/share/1G3Q8aYhm4/", icon: FaFacebookF },
+  { href: "https://x.com/xotrik44589", icon: FaXTwitter },
 ];
 
 const iconVariants = {

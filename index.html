@@ -1,109 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
     <title>Xotrik | Building Your Digital Experience</title>
-    <meta
-      name="description"
-      content="Xotrik is a leading company in digital evolution and technological innovation, creating solutions that inspire, connect, and transform the future."
-    />
-    <meta
-      name="keywords"
-      content="Xotrik, technology, software, development, digital, innovation, Costa Rica"
-    />
+    <meta name="description" content="Xotrik impulsa tu evolución digital con IA, automatización y software a medida. Soluciones medibles que inspiran, conectan y transforman." />
+    <meta name="keywords" content="Xotrik, tecnología, software, desarrollo, IA, automatización, data, innovación, Costa Rica" />
     <meta name="author" content="Xotrik" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://www.xotrik.com/" />
+
+    <!-- Theme / color scheme -->
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#0A1828" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0A1828" />
 
     <!-- Favicons -->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/favicon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/favicon-512x512.png"
-    />
-    <link
-      rel="icon"
-      href="/favicon.ico"
-    />
-
-    <!-- Apple Touch Icon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-touch-icon.png"
-    />
-
-    <!-- Web Manifest -->
-    <link
-      rel="manifest"
-      href="/site.webmanifest"
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" crossorigin="use-credentials" />
 
     <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Xotrik | Building Your Digital Experience"
-    />
-    <meta
-      property="og:description"
-      content="We craft strategic digital solutions that deliver tangible, sustainable value."
-    />
-    <meta
-      property="og:image"
-      content="/logo-og.png"
-    />
-    <meta
-      property="og:url"
-      content="https://www.xotrik.com"
-    />
-    <meta
-      property="og:type"
-      content="website"
-    />
+    <meta property="og:title" content="Xotrik | Building Your Digital Experience" />
+    <meta property="og:description" content="IA, automatización y desarrollo a la medida para acelerar tu operación con resultados medibles." />
+    <meta property="og:image" content="/logo-og.png" />
+    <meta property="og:url" content="https://www.xotrik.com/" />
+    <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
-    <meta
-      name="twitter:card"
-      content="summary_large_image"
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Xotrik | Building Your Digital Experience" />
+    <meta name="twitter:description" content="Soluciones digitales con impacto: IA, automatización y software a medida." />
+    <meta name="twitter:image" content="/logo-og.png" />
+
+    <!-- DNS Prefetch + Preconnect (reduce TTFB para fuentes/Imágenes remotas que usas) -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fuentes (auto-host si puedes; si usas Google, mantén swap para evitar FOIT) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
     />
-    <meta
-      name="twitter:title"
-      content="Xotrik | Building Your Digital Experience"
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+      media="all"
     />
-    <meta
-      name="twitter:description"
-      content="We craft strategic digital solutions that deliver tangible, sustainable value."
+
+    <!-- Precarga de imágenes críticas (ajusta rutas/nombres). Eager para el hero. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/hero.avif"
+      imagesrcset="/hero.avif 1x, /hero.webp 1x, /hero.jpg 1x"
+      imagesizes="100vw"
+      fetchpriority="high"
     />
-    <meta
-      name="twitter:image"
-      content="/logo-og.png"
-    />
+
+    <!-- Opcional: precarga de banners de secciones (afina a tus assets reales) -->
+    <link rel="preload" as="image" href="/automation.png" imagesizes="100vw" />
+    <link rel="preload" as="image" href="/ai-banner.webp" imagesizes="100vw" />
+    <link rel="preload" as="image" href="/software-banner.webp" imagesizes="100vw" />
+
+    <!-- JSON-LD (SEO org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Xotrik",
+      "url": "https://www.xotrik.com/",
+      "logo": "https://www.xotrik.com/logo-og.png",
+      "sameAs": [
+        "https://www.facebook.com/xotrik",
+        "https://www.linkedin.com/company/xotrik"
+      ]
+    }
+    </script>
   </head>
 
-  <!-- Tailwind background light/dark -->
   <body class="bg-white dark:bg-black transition-colors duration-200">
     <div id="root"></div>
+
+    <!-- Noscript: Mensaje accesible para usuarios sin JS -->
+    <noscript>
+      <div style="margin:16px;padding:12px;border:1px solid #e5e7eb;border-radius:12px">
+        Para la mejor experiencia, activa JavaScript en tu navegador.
+      </div>
+    </noscript>
+
+    <!-- Entrada Vite -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
