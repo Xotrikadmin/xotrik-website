@@ -268,7 +268,10 @@ export default function AboutPage() {
       </section>
 
       {/* VALUES with icons and hover effects */}
-      <section className="relative py-24 md:py-32 bg-gradient-to-b from-[#081624] to-[#0A1828]">
+      <section
+        id="our-values"
+        className="relative py-24 md:py-32 bg-gradient-to-b from-[#081624] to-[#0A1828]"
+      >
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944')`,
@@ -400,7 +403,10 @@ export default function AboutPage() {
       </section>
 
      {/* Team showcase section */}
-<section className="relative py-20 md:py-28 bg-[#081624]">
+<section
+  id="our-team"
+  className="relative py-20 md:py-28 bg-[#081624]"
+>
   <div className="max-w-7xl mx-auto px-4 sm:px-8">
     <motion.div
       variants={fadeUp}
@@ -431,6 +437,33 @@ export default function AboutPage() {
         </p>
       </div>
     </div>
+
+    {/* CIO Section */}
+    <motion.div
+      id="cio-section"
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
+      className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 items-center bg-gradient-to-r from-[#0f2b35]/90 to-[#13606a]/80 p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,.4)]"
+    >
+      <div className="md:col-span-1">
+        <img
+          src="/us_CIO.jpg"
+          alt="CIO of Xotrik"
+          className="rounded-2xl object-cover w-full h-full shadow-lg"
+          loading="lazy"
+        />
+      </div>
+      <div className="md:col-span-2">
+        <h4 className="text-3xl font-extrabold" style={{ color: GOLD }}>
+          {t("aboutPage.team.cio.title")}
+        </h4>
+        <p className="mt-4 text-white/90 text-lg">
+          {t("aboutPage.team.cio.text")}
+        </p>
+      </div>
+    </motion.div>
   </div>
 </section>
 

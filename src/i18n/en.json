@@ -616,17 +616,14 @@
       "button": "Start Your Journey"
     },
     "team": {
-  "title": "Meet Our Team",
-  "subtitle": "Four passionate developers united by a shared vision of technological excellence",
-  "imageAlt": "Our team working together"
-}
-
+      "title": "Meet Our Team",
+      "subtitle": "Four passionate developers united by a shared vision of technological excellence",
+      "imageAlt": "Our team working together",
+      "cio": {
+        "title": "CIO",
+        "text": "In Xotrik we are on continuous learning so we can offer best solutions for each client's needs."
+      }
+    }
   }
   
 }
-
-
-
-
-
-

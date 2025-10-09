@@ -1,0 +1,17 @@
+services:
+  app:
+    container_name: xotrikwebsite_devcontainer_app
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      no_cache: true
+      args:
+        DOCKER_BUILDKIT: 1
+        BUILDKIT_INLINE_CACHE: 1
+    image: localhost/xotrikwebsite/app_devcontainer:latest
+    volumes:
+      - ..:/workspaces
+      - ${HOME}/.local/share/containers:/home/vscode/.local/share/containers
+    command: sleep infinity
+    ports:
+      - "5173:5173" # Frontend

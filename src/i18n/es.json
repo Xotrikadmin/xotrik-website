@@ -618,20 +618,13 @@
       "button": "Comienza tu viaje"
     },
     "team": {
-  "title": "Conoce a nuestro equipo",
-  "subtitle": "Cuatro desarrolladores apasionados unidos por una visión compartida de excelencia tecnológica",
-  "imageAlt": "Nuestro equipo trabajando en conjunto"
+      "title": "Conoce a nuestro equipo",
+      "subtitle": "Cuatro desarrolladores apasionados unidos por una visión compartida de excelencia tecnológica",
+      "imageAlt": "Nuestro equipo trabajando en conjunto",
+      "cio": {
+        "title": "CIO",
+        "text": "En Xotrik estamos en continuo aprendizaje para poder ofrecer las mejores soluciones a los problemas de cada cliente."
+      }
+    }
   }
-  
 }
-
-}
-
-
-
-
-
-
-
-
-
