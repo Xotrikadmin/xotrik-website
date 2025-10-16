@@ -18,7 +18,9 @@ const ServiceAutomation = lazy(() => import("../pages/ServiceAutomation"));
 const ServiceDataScience = lazy(() => import("../pages/ServiceDataScience"));
 const CookiesPolicy = lazy(() => import("../pages/CookiesPolicy"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
-
+const CioSection = lazy(() => import("../pages/CioSection"));
+// Temporarily hidden but keeping CioSection accessible
+// const DirectorsBoard = lazy(() => import("../pages/DirectorsBoard"));
 // ✅ Opcional: página unificada con hero + secciones (no afecta tus rutas existentes)
 const ServicesPage = lazy(() => import("../pages/ServicesPage"));
 
@@ -79,17 +81,31 @@ const pageMotion = {
 function ScrollToHash() {
   const location = useLocation();
   useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace("#", "");
-      const el = document.getElementById(id);
-      if (el) {
-        const yOffset = -8;
-        const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
+    const handleScroll = () => {
+      let elementId = "";
+      const teamPaths = ["/CEO", "/CTO", "/CFO"];
+      if (teamPaths.includes(location.pathname)) {
+        elementId = "our-team";
+      } else if (location.hash) {
+        elementId = location.hash.replace("#", "");
       }
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      if (elementId) {
+        const el = document.getElementById(elementId);
+        if (el) {
+          const yOffset = -80; // Ajustado para la altura del navbar
+          const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
+
+    // Usamos un pequeño timeout para dar tiempo a que la página se renderice
+    const timer = setTimeout(handleScroll, 100);
+
+    return () => clearTimeout(timer);
   }, [location.pathname, location.hash]);
   return null;
 }
@@ -120,7 +136,12 @@ export default function AppRoutes() {
             <Route index element={<motion.div {...pageMotion}><Landing /></motion.div>} />
             <Route path="branding" element={<motion.div {...pageMotion}><Branding /></motion.div>} />
             <Route path="/about" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
-
+            {/* Temporarily hidden but keeping CIO section accessible */}
+            {/* <Route path="/directors-board" element={<motion.div {...pageMotion}><DirectorsBoard /></motion.div>} /> */}
+            <Route path="/CIO" element={<motion.div {...pageMotion}><CioSection /></motion.div>} />
+            <Route path="/CEO" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
+            <Route path="/CTO" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
+            <Route path="/CFO" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
             <Route
               path="/politica-cookies"
               element={

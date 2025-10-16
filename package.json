@@ -4,10 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
+    "tunnel:localtunnel": "npx localtunnel --port 5173",
+    "tunnel:ngrok": "npx @ngrok/ngrok http 5173 --authtoken $NGROK_AUTH_TOKEN",
+    "tunnel:cloudflared": "cloudflared tunnel --url http://localhost:5173",
     "lint": "eslint . --ext .js,.jsx",
-    "preview": "vite preview",
+    "preview": "vite preview --host",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -61,10 +64,13 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "localtunnel": "^2.0.2",
+    "ngrok": "^5.0.0-beta.2",
     "postcss": "^8.5.6",
     "react-icons": "^5.5.0",
     "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.3",
+    "terser": "^5.44.0",
     "vite": "^7.0.3"
   }
 }
