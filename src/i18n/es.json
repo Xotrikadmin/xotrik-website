@@ -1,10 +1,69 @@
 {
   "navbar": {
-    "home": "Inicio",
-    "about": "Sobre Nosotros",
-    "contact": "Contacto",
-    "solutions": "Soluciones",
-    "services": "Servicios",
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "solutions": "Solutions",
+    "services": "Services",
+    "directors": "Board of Directors"
+  },
+  "directorsBoard": {
+    "title": "Junta Directiva",
+    "subtitle": "Liderando la innovación y el crecimiento sostenible",
+    "executives": {
+      "ceo": {
+        "title": "CEO",
+        "name": "Jane Smith",
+        "role": "Director Ejecutivo",
+        "description": "Visión estratégica y liderazgo empresarial"
+      },
+      "cto": {
+        "title": "CTO",
+        "name": "Mike Johnson",
+        "role": "Director de Tecnología",
+        "description": "Innovación tecnológica y desarrollo de productos"
+      },
+      "cfo": {
+        "title": "CFO",
+        "name": "Sarah Wilson",
+        "role": "Director Financiero",
+        "description": "Gestión financiera y planificación estratégica"
+      }
+    },
+    "cio": {
+      "name": "Joseph Jimenez",
+      "role": "Chief Information Officer",
+      "description": "Líder en transformación digital y estrategia tecnológica",
+      "bio": "Con más de 15 años de experiencia en tecnología y transformación digital, Joseph lidera la estrategia tecnológica de Xotrik, impulsando la innovación y la excelencia operativa a través de soluciones digitales vanguardistas.",
+      "backToBoard": "Volver a Junta Directiva",
+      "responsibilities": "Responsabilidades Clave",
+      "responsibilitiesList": [
+        "Liderazgo en estrategia tecnológica",
+        "Gestión de infraestructura IT",
+        "Seguridad de datos y cumplimiento",
+        "Innovación y transformación digital"
+      ],
+      "focusAreas": "Áreas de Enfoque",
+      "focusAreasList": [
+        "Arquitectura empresarial",
+        "Optimización de procesos",
+        "Gestión de proyectos tecnológicos",
+        "Desarrollo de talento IT"
+      ],
+      "strategicObjectives": "Objetivos Estratégicos",
+      "efficiency": {
+        "title": "Eficiencia Operativa",
+        "description": "Optimización de procesos y reducción de costos mediante soluciones tecnológicas innovadoras"
+      },
+      "transformation": {
+        "title": "Transformación Digital",
+        "description": "Implementación de tecnologías emergentes para mantener la competitividad en el mercado"
+      },
+      "security": {
+        "title": "Seguridad y Cumplimiento",
+        "description": "Protección de activos digitales y aseguramiento del cumplimiento normativo"
+      }
+    },
     "ai": "IA y Ciencia de Datos",
     "automation": "Automatización",
     "integration": "Integración",

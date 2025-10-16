@@ -45,7 +45,8 @@
     "portsAttributes": {
         "5173": {
             "label": "Frontend",
-            "onAutoForward": "notify"
+            "onAutoForward": "notify",
+            "visibility": "public"
         }
     },
     // Set environment variables

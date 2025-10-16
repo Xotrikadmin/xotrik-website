@@ -18,6 +18,9 @@ const ServiceAutomation = lazy(() => import("../pages/ServiceAutomation"));
 const ServiceDataScience = lazy(() => import("../pages/ServiceDataScience"));
 const CookiesPolicy = lazy(() => import("../pages/CookiesPolicy"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
+const CioSection = lazy(() => import("../pages/CioSection"));
+// Temporarily hidden but keeping CioSection accessible
+// const DirectorsBoard = lazy(() => import("../pages/DirectorsBoard"));
 // ✅ Opcional: página unificada con hero + secciones (no afecta tus rutas existentes)
 const ServicesPage = lazy(() => import("../pages/ServicesPage"));
 
@@ -81,9 +84,7 @@ function ScrollToHash() {
     const handleScroll = () => {
       let elementId = "";
       const teamPaths = ["/CEO", "/CTO", "/CFO"];
-      if (location.pathname === "/CIO") {
-        elementId = "cio-section";
-      } else if (teamPaths.includes(location.pathname)) {
+      if (teamPaths.includes(location.pathname)) {
         elementId = "our-team";
       } else if (location.hash) {
         elementId = location.hash.replace("#", "");
@@ -135,7 +136,9 @@ export default function AppRoutes() {
             <Route index element={<motion.div {...pageMotion}><Landing /></motion.div>} />
             <Route path="branding" element={<motion.div {...pageMotion}><Branding /></motion.div>} />
             <Route path="/about" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
-            <Route path="/CIO" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
+            {/* Temporarily hidden but keeping CIO section accessible */}
+            {/* <Route path="/directors-board" element={<motion.div {...pageMotion}><DirectorsBoard /></motion.div>} /> */}
+            <Route path="/CIO" element={<motion.div {...pageMotion}><CioSection /></motion.div>} />
             <Route path="/CEO" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
             <Route path="/CTO" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
             <Route path="/CFO" element={<motion.div {...pageMotion}><AboutPage /></motion.div>} />
